@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>La suite de Fibonacci</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="devoir.css">
+    </head>
+    <body background="wal3.jpg">
+        <img src="UM5.png" height="100" width="100">
+        <h1 class="c1">La suite de Fibonacci </h1>
+        <pre>Bonjour cher 'friend', dans notre site nous vous aidons de bien comprendre et savoir tout les informations sur la suite
+ de Fibonacci , et pourquoi ils ont l'appelée "la fascinante suite"?.Tous ça nous allons le découvrire ensemble.
+        </pre>
+    </body>
+<div class="aa"></div>
+<img id="i1" src="wa1.jpg" height="250" width="250">
+<img id="i2" src="wa2.jpg" height="250" width="250">
+<img id="i3" src="wa5.jpg" height="250" width="250">
+<img id="i4" src="wa7.jpg" height="250" width="250">
+</div>
+<br><br>
+<p class="c1" style="color:rgb(127, 109, 112);">La suite de Fibonacci est une suite de nombres dans laquelle tout nombre est égal à la somme des deux précédents. Il suffit de prendre deux nombres de départ. Les ajouter donne le troisième, puis le deuxième + le troisième donne le quatrième et ainsi de suite.Dans toute suite de Fibonacci le rapport des deux derniers nombres(le plus grand / le plus petit), tend vers la valeur 1,61803...,<a href="https://www.adobe.com/ca_fr/creativecloud/design/discover/golden-ratio.html"> le nombre d'or.</a></p>
+<h3>Tester sur les dix premiers termes de la suite de Fibonacci le nombre d'or :</h3>
+<form name='FF'>
+<select name="S1">
+   <option value="0">0</option> 
+   <option value="1">1</option> 
+   <option value="2">2</option> 
+   <option value="3">3</option> 
+   <option value="5">5</option> 
+   <option value="8">8</option> 
+   <option value="13">13</option> 
+   <option value="21">21</option> 
+   <option value="34" selected>34</option> 
+</select>
+<input type="radio" name="MM" value="/">/
+<select name="S2">
+    <option value="0">0</option> 
+    <option value="1">1</option> 
+    <option value="2">2</option> 
+    <option value="3">3</option> 
+    <option value="5">5</option> 
+    <option value="8">8</option> 
+    <option value="13">13</option> 
+    <option value="21"selected>21</option> 
+    <option value="34">34</option> 
+ </select>
+<input type="text" name="BB" onfocus="
+c1=parseInt(document.FF.S1.value);
+c2=parseInt(document.FF.S2.value);
+op=document.FF.MM.value;
+document.FF.BB.value=eval(c1+op+c2)
+">
+</form>
+<h3 style="color:black" align="center"><u>Vous pouvez tester ici le calcul d'une suite de Fibonacci</u></h3>
+<script type="text/javascript">
+    tab=new Array(0,1);
+    function fib()
+    {
+    Nieme=prompt("entrez le N ième rang de\nla suite de Fibonacci", "50");
+    for (i=2; i<=Nieme; i++)
+    {
+    tab[i]=tab[i-1]+tab[i-2];
+    }
+    for (n=0; n<=Nieme; n++)
+    {
+    document.forms['ff'].resultats.value+=tab[n]+", ";
+    }
+    document.forms['ff'].resultats.value+="FIN";
+    }
+    function supr()
+    {
+    document.forms['ff'].resultats.value=""; 
+    } 
+    </script>
+    <center>
+    <p class="c1"><b>Cliquez sur le bouton "SUITE DE FIBONACCI" pour lister la suite de Fibonacci du premier élément jusqu'au N <sup>ième</sup> élément</b><br />(Il est favorable de ne pas choisir une valeur trés grand de N pour tester )<br /></p>
+     <form name="ff">
+    <input type="button" onClick="fib();" value="SUITE DE FIBONACCI" /><br /><br>
+    <textarea name="resultats" cols="50" rows="10"></textarea><br><br>
+    <p><b>Cliquez ci-dessus pour effacer les résultats</b></p>
+    <input type="button" onClick="supr();" value="EFFACER LES VALEURS" /><br />
+     </form>
+    </center>
+<h3 style="color:pink;"><u>La question à propos ce sujet :</u></h3>
+<ul>
+    <li><b>A quoi sert la suite de Fibonacci ?</b></li>
+ </ul><br>
+ <p class="c2">1- La suite permet de comprendre la construction de la vie ,On la retrouve dans le corps humain,
+    dans la nature en général <br>
+    <a href="https://youtu.be/JTy3v9_nZH8">Lien de 1<sup>er</sup>video.</a><br>
+    2- La suite de fibonacci est un outil pour faire des prédictions mathématiques.<br>
+    <u>Par exemple:</u> quand on prend l’étude d’une population de lapins, on voit que ça permet de prédire quand on aura un nombre donné de lapins.<br>
+    <img id="i5" src="imgl.jpg" height="300" width="350"><br>
+    3- La suite de Fibonacci peut servir à créer des projets artistiques harmonieux<br>
+    <a href="https://youtu.be/OmeLT1tNYp8">Lien de 2<sup>eme</sup>video.</a><br> 
+    <u>Ecouter ce audio : (Fibonacci π 1.618 no piano)</u><br>
+    <audio controls >
+    <source src="fib audio.mp3"></source>
+    </audio><br>
+<font style="color: rgb(181, 75, 75);">Pour bien comprendre l'importance de cette suite vous devez voir le video au dessous </font><br>
+<video controls width="400" height="400">
+<source src="vd.ogv" ></source>
+</video>
+</p>
+    <address>
+        Réalisée par: <u>MAKBOUL Wiam</u><br>
+        Visitez-nous à:<u>FSR.com</u><br>
+        Rue Adnane,Salé<br>
+        Maroc,<a href="mailto:wiam.makboul@um5r.ac.ma">wiam.makboul@um5r.ac.ma</a>
+    </address>
+    </html>
